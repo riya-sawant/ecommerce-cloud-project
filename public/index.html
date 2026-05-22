@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloud Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cloud Shop</h1>
+  <p>A simple ecommerce app for my cloud deployment project.</p>
+
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+      <h2>Cloud Hoodie</h2>
+      <p>$25</p>
+      <button onclick="addToCart('Cloud Hoodie', 25)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcf93a">
+      <h2>Serverless Mug</h2>
+      <p>$12</p>
+      <button onclick="addToCart('Serverless Mug', 12)">Add to Cart</button>
+    </div>
+  </div>
+
+  <h2>Cart</h2>
+  <ul id="cart"></ul>
+
+  <button onclick="checkout()">Checkout</button>
+
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
